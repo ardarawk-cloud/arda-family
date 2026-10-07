@@ -17,7 +17,6 @@ window.ARDA_FAMILY_DATA = {
         initials: "GA",
         photo: "assets/family/gina.webp",
         origin: "Bandung",
-        status: "Cerai",
         relation: "Istri Pertama"
       },
       children: [
@@ -36,7 +35,6 @@ window.ARDA_FAMILY_DATA = {
         initials: "SN",
         photo: "assets/family/novi.webp",
         origin: "Pontianak",
-        status: "Cerai",
         relation: "Istri Kedua"
       },
       children: [
@@ -56,7 +54,6 @@ window.ARDA_FAMILY_DATA = {
         photo: "assets/family/nadya.webp",
         photoPosition: "50% 40%",
         origin: "Manado",
-        status: "Menikah",
         relation: "Istri Ketiga"
       },
       children: [
