@@ -33,7 +33,6 @@ function personCard(person, extraClass = "") {
       <h3>${esc(person.name)}</h3>
       ${person.alias ? `<div class="person-alias">${esc(person.alias)}</div>` : ""}
       ${person.origin ? `<span class="meta">Asal: ${esc(person.origin)}</span>` : ""}
-      ${person.status ? `<span class="status-badge ${person.status === "Cerai" ? "divorced" : "married"}">${esc(person.status)}</span>` : ""}
       ${person.generation ? `<span class="meta">${esc(person.generation)}</span>` : ""}
       ${person.note ? `<span class="meta">${esc(person.note)}</span>` : ""}
     </article>
