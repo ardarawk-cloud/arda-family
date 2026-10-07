@@ -3,6 +3,7 @@ window.ARDA_FAMILY_DATA = {
     name: "Bagus Putu Hardajaya",
     alias: "Arda",
     initials: "AR",
+    photo: "https://ardamoron.nadmo.id/assets/gallery/bw-portrait.webp",
     role: "Family Root",
     generation: "Generasi 0",
     note: "Titik puncak sementara untuk navigasi silsilah keluarga ARDA FAMILY."
