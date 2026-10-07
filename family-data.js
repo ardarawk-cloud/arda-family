@@ -44,6 +44,7 @@ window.ARDA_FAMILY_DATA = {
           name: "Putu Azya Putri Bintang Hardajaya",
           initials: "PB",
           photo: "assets/family/bintang.webp",
+          birthDate: "6 September 2013",
           relation: "Anak"
         }
       ]
