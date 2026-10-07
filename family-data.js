@@ -1,13 +1,66 @@
 window.ARDA_FAMILY_DATA = {
   root: {
-    name: "Arda",
+    name: "Bagus Putu Hardajaya",
+    alias: "Arda",
     initials: "AR",
     role: "Family Root",
     generation: "Generasi 0",
-    note: "Titik puncak sementara untuk navigasi website ARDA FAMILY."
+    note: "Titik puncak sementara untuk navigasi silsilah keluarga ARDA FAMILY."
   },
 
-  branches: [],
+  families: [
+    {
+      order: 1,
+      spouse: {
+        name: "Gina Anggraeni",
+        initials: "GA",
+        origin: "Bandung",
+        status: "Cerai",
+        relation: "Istri Pertama"
+      },
+      children: [
+        {
+          name: "Prince Yuki Muhamad Ramadan",
+          initials: "PY",
+          relation: "Anak"
+        }
+      ]
+    },
+    {
+      order: 2,
+      spouse: {
+        name: "Sri Novi Yanti",
+        initials: "SN",
+        origin: "Pontianak",
+        status: "Cerai",
+        relation: "Istri Kedua"
+      },
+      children: [
+        {
+          name: "Putu Azya Putri Bintang Hardajaya",
+          initials: "PB",
+          relation: "Anak"
+        }
+      ]
+    },
+    {
+      order: 3,
+      spouse: {
+        name: "Nadya Laoh",
+        initials: "NL",
+        origin: "Manado",
+        status: "Menikah",
+        relation: "Istri Ketiga"
+      },
+      children: [
+        {
+          name: "Arthur Rasta",
+          initials: "AR",
+          relation: "Anak"
+        }
+      ]
+    }
+  ],
 
   ancestors: [
     {
@@ -22,16 +75,16 @@ window.ARDA_FAMILY_DATA = {
 
   research: [
     {
-      title: "Identitas ayah / jalur orang tua",
-      text: "Belum dimasukkan ke pohon utama. Hubungan akan ditambahkan hanya setelah informasi keluarga cukup jelas."
+      title: "Jalur orang tua Arda",
+      text: "Belum dimasukkan ke pohon utama. Hubungan akan ditambahkan setelah identitas dan posisi generasi dipastikan."
     },
     {
       title: "Penghubung Arda ↔ Pekak Gunung",
       text: "Relasi kakek dicatat, tetapi node generasi di antara keduanya belum dipublikasikan agar silsilah tidak mengarang data."
     },
     {
-      title: "Foto & dokumen keluarga",
-      text: "Arsip foto, akta, catatan keluarga, dan keterangan kerabat dapat ditambahkan bertahap sebagai bukti pendukung."
+      title: "Arsip keluarga",
+      text: "Foto, dokumen, tanggal lahir, tempat lahir, dan cerita keluarga dapat ditambahkan bertahap untuk melengkapi profil setiap anggota."
     }
   ]
 };
