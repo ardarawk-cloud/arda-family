@@ -6,6 +6,7 @@ window.ARDA_FAMILY_DATA = {
     photo: "https://ardamoron.nadmo.id/assets/gallery/bw-portrait.webp",
     role: "Family Root",
     generation: "Generasi 0",
+    birthDate: "31 Januari 1984",
     note: "Titik puncak sementara untuk navigasi silsilah keluarga ARDA FAMILY."
   },
 
