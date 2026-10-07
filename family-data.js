@@ -55,7 +55,7 @@ window.ARDA_FAMILY_DATA = {
         name: "Nadya Laoh",
         initials: "NL",
         photo: "assets/family/nadya.webp",
-        photoPosition: "50% 40%",
+        photoPosition: "50% 58%",
         origin: "Manado",
         birthDate: "10 Juli 1997",
         relation: "Istri Ketiga"
