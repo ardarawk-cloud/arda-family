@@ -28,7 +28,7 @@ function esc(value="") {
 function personCard(person, extraClass = "") {
   return `
     <article class="person-card ${extraClass}">
-      <div class="avatar">${esc(person.initials || person.name?.slice(0,2) || "AF")}</div>
+      <div class="avatar">${person.photo ? `<img src="${esc(person.photo)}" alt="${esc(person.name || "Anggota keluarga")}">` : esc(person.initials || person.name?.slice(0,2) || "AF")}</div>
       <span class="relation">${esc(person.relation || person.role || "Keluarga")}</span>
       <h3>${esc(person.name)}</h3>
       ${person.alias ? `<div class="person-alias">${esc(person.alias)}</div>` : ""}
