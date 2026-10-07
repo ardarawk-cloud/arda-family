@@ -15,6 +15,7 @@ window.ARDA_FAMILY_DATA = {
       spouse: {
         name: "Gina Anggraeni",
         initials: "GA",
+        photo: "assets/family/gina.webp",
         origin: "Bandung",
         status: "Cerai",
         relation: "Istri Pertama"
@@ -23,6 +24,7 @@ window.ARDA_FAMILY_DATA = {
         {
           name: "Prince Yuki Muhamad Ramadan",
           initials: "PY",
+          photo: "assets/family/yuki.webp",
           relation: "Anak"
         }
       ]
@@ -32,6 +34,7 @@ window.ARDA_FAMILY_DATA = {
       spouse: {
         name: "Sri Novi Yanti",
         initials: "SN",
+        photo: "assets/family/novi.webp",
         origin: "Pontianak",
         status: "Cerai",
         relation: "Istri Kedua"
@@ -40,6 +43,7 @@ window.ARDA_FAMILY_DATA = {
         {
           name: "Putu Azya Putri Bintang Hardajaya",
           initials: "PB",
+          photo: "assets/family/bintang.webp",
           relation: "Anak"
         }
       ]
@@ -49,6 +53,7 @@ window.ARDA_FAMILY_DATA = {
       spouse: {
         name: "Nadya Laoh",
         initials: "NL",
+        photo: "assets/family/nadya.webp",
         origin: "Manado",
         status: "Menikah",
         relation: "Istri Ketiga"
@@ -57,6 +62,7 @@ window.ARDA_FAMILY_DATA = {
         {
           name: "Arthur Rasta",
           initials: "AR",
+          photo: "assets/family/arthur.webp",
           relation: "Anak"
         }
       ]
