@@ -36,6 +36,7 @@ window.ARDA_FAMILY_DATA = {
         initials: "SN",
         photo: "assets/family/novi.webp",
         origin: "Pontianak",
+        birthDate: "25 November 1988",
         relation: "Istri Kedua"
       },
       children: [
@@ -55,6 +56,7 @@ window.ARDA_FAMILY_DATA = {
         photo: "assets/family/nadya.webp",
         photoPosition: "50% 40%",
         origin: "Manado",
+        birthDate: "10 Juli 1997",
         relation: "Istri Ketiga"
       },
       children: [
