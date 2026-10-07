@@ -113,3 +113,118 @@ footer span{display:block;margin-top:3px}
   .person-card{width:250px}
   .branch-shelf{width:100%}
 }
+
+/* Family branch layout */
+.person-alias{
+  font-family:var(--serif);
+  color:var(--gold2);
+  font-size:15px;
+  margin:-2px 0 8px;
+}
+.status-badge{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  margin-top:12px;
+  padding:5px 9px;
+  border:1px solid var(--line);
+  font-size:9px;
+  text-transform:uppercase;
+  letter-spacing:.14em;
+}
+.status-badge.divorced{
+  color:#c6a58a;
+  border-color:rgba(191,141,93,.35);
+  background:rgba(191,141,93,.06);
+}
+.status-badge.married{
+  color:#a8c1ad;
+  border-color:rgba(113,141,121,.4);
+  background:rgba(113,141,121,.07);
+}
+.family-shelf{
+  width:100%;
+  border-top:1px solid var(--line);
+  display:grid;
+  grid-template-columns:repeat(3,minmax(260px,1fr));
+  gap:22px;
+  padding-top:32px;
+  position:relative;
+}
+.family-shelf:before{
+  content:"";
+  position:absolute;
+  width:1px;
+  height:32px;
+  background:var(--line);
+  left:50%;
+  top:-32px;
+}
+.family-branch{
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  min-width:0;
+}
+.family-branch:before{
+  content:"";
+  position:absolute;
+  width:1px;
+  height:32px;
+  background:var(--line);
+  top:-32px;
+  left:50%;
+}
+.branch-label{
+  margin-bottom:10px;
+  color:var(--muted);
+  font-size:9px;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+}
+.spouse-card,
+.child-card{
+  width:100%;
+  max-width:300px;
+}
+.spouse-card{
+  border-color:rgba(223,205,153,.24);
+}
+.desc-line{
+  width:1px;
+  height:34px;
+  background:var(--line);
+}
+.children-grid{
+  width:100%;
+  display:grid;
+  gap:14px;
+}
+.child-wrap{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+.child-line{
+  width:1px;
+  height:18px;
+  background:var(--line);
+}
+.child-card{
+  background:linear-gradient(145deg,rgba(113,141,121,.06),rgba(255,255,255,.012));
+}
+@media(max-width:980px){
+  .family-shelf{
+    grid-template-columns:1fr;
+    border-top:0;
+    gap:34px;
+    max-width:520px;
+  }
+  .family-shelf:before{display:none}
+  .family-branch{
+    border-top:1px solid var(--line);
+    padding-top:28px;
+  }
+  .family-branch:before{display:none}
+}
