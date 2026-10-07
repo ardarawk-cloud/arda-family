@@ -25,39 +25,54 @@ function esc(value="") {
   })[c]);
 }
 
+function personCard(person, extraClass = "") {
+  return `
+    <article class="person-card ${extraClass}">
+      <div class="avatar">${esc(person.initials || person.name?.slice(0,2) || "AF")}</div>
+      <span class="relation">${esc(person.relation || person.role || "Keluarga")}</span>
+      <h3>${esc(person.name)}</h3>
+      ${person.alias ? `<div class="person-alias">${esc(person.alias)}</div>` : ""}
+      ${person.origin ? `<span class="meta">Asal: ${esc(person.origin)}</span>` : ""}
+      ${person.status ? `<span class="status-badge ${person.status === "Cerai" ? "divorced" : "married"}">${esc(person.status)}</span>` : ""}
+      ${person.generation ? `<span class="meta">${esc(person.generation)}</span>` : ""}
+      ${person.note ? `<span class="meta">${esc(person.note)}</span>` : ""}
+    </article>
+  `;
+}
+
 function renderTree() {
   if (!familyTree || !data.root) return;
-  const r = data.root;
-  const branches = Array.isArray(data.branches) ? data.branches : [];
 
-  const branchHtml = branches.length
-    ? branches.map(b => `
-      <article class="person-card">
-        <div class="avatar">${esc(b.initials || b.name?.slice(0,2) || "AF")}</div>
-        <span class="relation">${esc(b.relation || "Keluarga")}</span>
-        <h3>${esc(b.name)}</h3>
-        <span class="meta">${esc(b.note || "")}</span>
-      </article>`).join("")
-    : `
-      <article class="empty-branch">
-        <div>
-          <strong>Cabang keluarga belum ditambahkan</strong>
-          <span>Anggota berikutnya akan muncul di sini setelah datanya dimasukkan.</span>
-        </div>
-      </article>`;
+  const families = Array.isArray(data.families) ? data.families : [];
+
+  const familyHtml = families.map(group => {
+    const spouse = group.spouse || {};
+    const children = Array.isArray(group.children) ? group.children : [];
+    const childrenHtml = children.length
+      ? children.map(child => `
+          <div class="child-wrap">
+            <div class="child-line"></div>
+            ${personCard(child, "child-card")}
+          </div>
+        `).join("")
+      : '<div class="empty-branch"><strong>Belum ada data anak</strong></div>';
+
+    return `
+      <section class="family-branch">
+        <div class="branch-label">Keluarga ${String(group.order || "").padStart(2,"0")}</div>
+        ${personCard(spouse, "spouse-card")}
+        <div class="desc-line"></div>
+        <div class="children-grid">${childrenHtml}</div>
+      </section>
+    `;
+  }).join("");
 
   familyTree.innerHTML = `
     <div class="root-wrap">
-      <article class="person-card root">
-        <div class="avatar">${esc(r.initials || "AR")}</div>
-        <span class="relation">${esc(r.role || "Family Root")}</span>
-        <h3>${esc(r.name)}</h3>
-        <span class="meta">${esc(r.generation || "")}</span>
-        <span class="meta">${esc(r.note || "")}</span>
-      </article>
+      ${personCard(data.root, "root")}
       <div class="tree-line"></div>
     </div>
-    <div class="branch-shelf">${branchHtml}</div>
+    <div class="family-shelf">${familyHtml}</div>
   `;
 }
 
