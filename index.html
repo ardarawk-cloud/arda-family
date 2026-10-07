@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0f1713">
+  <meta name="description" content="Arda Family — arsip silsilah keluarga, leluhur, dan dokumentasi lintas generasi.">
+  <title>ARDA FAMILY — Silsilah Keluarga</title>
+  <link rel="stylesheet" href="styles.css?v=1">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Arda Family">
+      <span class="brand-mark">AF</span>
+      <span>
+        <strong>ARDA FAMILY</strong>
+        <small>Silsilah & Arsip Keluarga</small>
+      </span>
+    </a>
+
+    <button class="menu-btn" id="menuBtn" aria-label="Buka menu" aria-expanded="false">Menu</button>
+
+    <nav id="nav">
+      <a href="#pohon">Pohon Keluarga</a>
+      <a href="#leluhur">Leluhur</a>
+      <a href="#riset">Catatan Riset</a>
+      <a href="#tentang">Tentang Arsip</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Family Archive · Bali, Indonesia</p>
+        <h1>Nama boleh hilang dari ingatan.<br><em>Jejaknya jangan.</em></h1>
+        <p class="lead">
+          Arsip digital keluarga Arda untuk menyusun hubungan keluarga, menyimpan cerita,
+          foto, dokumen, serta memisahkan fakta yang sudah diketahui dari bagian yang masih ditelusuri.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#pohon">Lihat Silsilah</a>
+          <a class="btn ghost" href="#riset">Lihat Status Riset</a>
+        </div>
+      </div>
+
+      <aside class="hero-seal" aria-label="Identitas arsip">
+        <span class="seal-ring">ARDA<br>FAMILY</span>
+        <p>Digital Family Archive</p>
+        <small>Est. 2026</small>
+      </aside>
+    </section>
+
+    <section class="section tree-section" id="pohon">
+      <div class="section-head">
+        <p class="kicker">Pohon Keluarga</p>
+        <h2>Berawal dari Arda</h2>
+        <p>
+          Untuk website ini, Arda ditempatkan sebagai <strong>Family Root</strong> sementara.
+          Posisi ini adalah titik awal navigasi, bukan klaim bahwa Arda adalah leluhur tertua.
+        </p>
+      </div>
+
+      <div class="tree-toolbar">
+        <span class="legend verified-dot">Terverifikasi keluarga</span>
+        <span class="legend research-dot">Dalam riset</span>
+        <span class="legend empty-dot">Belum diisi</span>
+      </div>
+
+      <div class="family-tree" id="familyTree" aria-live="polite"></div>
+    </section>
+
+    <section class="section ancestors" id="leluhur">
+      <div class="section-head">
+        <p class="kicker">Arsip Leluhur</p>
+        <h2>Jejak sebelum Family Root</h2>
+        <p>
+          Leluhur disimpan sebagai arsip terpisah sampai jalur penghubung antargenerasi cukup jelas.
+          Dengan cara ini, website tidak mengarang hubungan keluarga yang belum diketahui.
+        </p>
+      </div>
+
+      <div class="ancestor-grid" id="ancestorGrid"></div>
+    </section>
+
+    <section class="section research" id="riset">
+      <div class="section-head">
+        <p class="kicker">Catatan Riset</p>
+        <h2>Yang belum diketahui juga harus dicatat</h2>
+      </div>
+
+      <div class="research-board" id="researchBoard"></div>
+    </section>
+
+    <section class="section about" id="tentang">
+      <div class="about-card">
+        <div>
+          <p class="kicker">Tentang Arsip</p>
+          <h2>Bukan sekadar pohon nama.</h2>
+        </div>
+        <div>
+          <p>
+            ARDA FAMILY dirancang sebagai arsip hidup. Setiap anggota nantinya dapat memiliki profil,
+            hubungan keluarga, foto, tempat asal, cerita, dokumen, dan sumber keterangan.
+          </p>
+          <p>
+            Data yang belum pasti tidak otomatis dianggap fakta. Status sumber akan tetap terlihat:
+            keterangan keluarga, dokumen, arsip publik, atau masih dalam penelusuran.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div>
+      <strong>ARDA FAMILY</strong>
+      <span>Private history, carefully documented.</span>
+    </div>
+    <small>© <span id="year"></span> Arda Family · Built for long-term family archiving.</small>
+  </footer>
+
+  <script src="family-data.js?v=1"></script>
+  <script src="script.js?v=1"></script>
+</body>
+</html>
