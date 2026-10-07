@@ -121,27 +121,6 @@ footer span{display:block;margin-top:3px}
   font-size:15px;
   margin:-2px 0 8px;
 }
-.status-badge{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  margin-top:12px;
-  padding:5px 9px;
-  border:1px solid var(--line);
-  font-size:9px;
-  text-transform:uppercase;
-  letter-spacing:.14em;
-}
-.status-badge.divorced{
-  color:#c6a58a;
-  border-color:rgba(191,141,93,.35);
-  background:rgba(191,141,93,.06);
-}
-.status-badge.married{
-  color:#a8c1ad;
-  border-color:rgba(113,141,121,.4);
-  background:rgba(113,141,121,.07);
-}
 .family-shelf{
   width:100%;
   border-top:1px solid var(--line);
