@@ -66,6 +66,7 @@ window.ARDA_FAMILY_DATA = {
           name: "Arthur Rasta Hardajaya",
           initials: "AR",
           photo: "assets/family/arthur.webp",
+          birthDate: "31 Maret 2017",
           relation: "Anak"
         }
       ]
