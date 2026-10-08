@@ -62,7 +62,7 @@ window.ARDA_FAMILY_DATA = {
       },
       children: [
         {
-          name: "Arthur Rasta",
+          name: "Arthur Rasta Hardajaya",
           initials: "AR",
           photo: "assets/family/arthur.webp",
           relation: "Anak"
