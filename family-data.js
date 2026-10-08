@@ -25,6 +25,7 @@ window.ARDA_FAMILY_DATA = {
           name: "Prince Yuki Muhamad Ramadan",
           initials: "PY",
           photo: "assets/family/yuki.webp",
+          birthDate: "10 Februari 2009",
           relation: "Anak"
         }
       ]
